@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../project39-main"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HTML CSS JAVASCRIPTS BASES"
+	}
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX LANDPAGE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo appletv.png"></a>
+        <ul class="navigation">
+            <li><a href="#">CASA</a></li>
+            <li><a href="#">SHOWS DE TV</a></li>
+            <li><a href="#">PELICULAS</a></li>
+            <li><a href="#">LO ULTIMO</a></li>
+            <li><a href="#">MI LISTA</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="bg1.jpg" class="bg">
+        <div class="content">
+            <img src="logotitulo.png" class="movieTitle">
+            <h4>
+                <span>2024</span>
+                <span><i>12+</i></span>
+                <span>1h 30min</span>
+                <span>Accion,Drama</span>
+            </h4>
+            <p>cuenta la hisotria Lorem, ipsum dolor sit amet consectetur
+                 adipisicing elit. Iste animi praesentium architecto. Quidem 
+                 laboriosam expedita exercitationem, eaque repudiandae 
+                 aspernatur blanditiis porro neque optio voluptatibus. 
+                 Soluta laborum porro nobis? Dolores, animi?</p>
+            <div class="buttons">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Reproducir</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>Mi lista</a> 
+            </div>
+        </div>
+        <a class="play" onclick="toggleVideo();"><img src="playbutton.png">mira el Trailer</a>
+    </div>
+
+    <div class="trailer">
+        <video src="Trailer- Surviving Together- The Walking Dead- Season 5_HD.mp4" controls="true" autoplay="true"></video>
+        <img src="x.png" class="close" onclick="toggleVideo();" >
+    </div> 
+
+    <script>
+        function toggleVideo(){
+            const trailer=document.querySelector('.trailer');
+            const video=document.querySelector('video');
+            trailer.classList.toggle('active');
+            video.currentTime=0;
+            video.pause();
+        }
+    </script>     
+</body>
+</html>
